@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="AllFragment.All_News_Paper"
+    android:background="@color/White"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/White">
+
+        <!--  <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/White"
+              android:gravity="center"
+              android:textSize="30dp"
+              android:layout_marginTop="30dp"
+              android:textStyle="bold"
+              android:text="वर्तमान पत्र"/>-->
+
+
+        <GridView
+            android:id="@+id/gridView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnWidth="100dp"
+            android:layout_marginTop="30dp"
+            android:numColumns="2"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:background="@color/White"
+            android:stretchMode="columnWidth">
+        </GridView>
+    </LinearLayout>
+</LinearLayout>

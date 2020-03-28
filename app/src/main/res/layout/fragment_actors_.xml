@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="AllFragment.News_Article_Fragment"
+    android:orientation="vertical">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/peach">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="bold"
+            android:text="आपत्कालीन यंत्रणा"/>
+
+
+        <GridView
+            android:id="@+id/gridView1"
+            android:layout_width="fill_parent"
+            android:layout_height="430dp"
+            android:columnWidth="100dp"
+            android:layout_marginTop="30dp"
+            android:numColumns="2"
+            android:verticalSpacing="0dp"
+            android:horizontalSpacing="0dp"
+            android:background="@color/peach"
+            android:stretchMode="columnWidth">
+        </GridView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="sky_blue">#3668ae</color>
+    <color name="Red">#ED2226</color>
+    <color name="peach">#333333</color>
+    <color name="red_transparent">#90e80002</color>
+    <color name="White">#ffffff</color>
+    <color name="black">#333333</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="black_trans80">#33000000</color>
+
+    <color name="Gray">#c3c3c3</color>
+    <color name="screen_background">#3C464F</color>
+    <color name="cyan">#00BCD4</color>
+    <color name="orange">#FF9800</color>
+    <color name="green">#4CAF50</color>
+    <color name="indicator_unselected">#4D000000</color>
+    <color name="colorAccentTwo">#ffcb03</color>
+    <color name="warm_grey">#ff979797</color>
+    <color name="primary_500">#3F51B5</color>
+    <!--Indigo 700-->
+    <color name="button_color">#78B266</color>
+    <color name="colorAccent">#ff6e39</color>
+    <color name="primary_700">#303F9F</color>
+    <!--Pink 500-->
+    <color name="accent_500">#E91E63</color>
+    <!--Pink 700-->
+    <color name="accent_700">#C2185B</color>
+</resources>

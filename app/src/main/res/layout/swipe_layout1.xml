@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/appbar">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="top"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loading"
+        android:padding="3dp"
+        android:radius="5dp" />
+    <ImageView
+        android:id="@+id/outside_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/youtube_ico"
+
+        android:padding="100dp"
+        android:alpha=".80"
+        android:adjustViewBounds="false"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/imageView" />
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/posttitile"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textIsSelectable="true"
+        android:typeface="normal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/desc"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:typeface="monospace"
+
+        android:linksClickable="true"
+        android:padding="5dp"
+        android:layout_below="@+id/posttitile"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/postby" />
+
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/postby"
+        android:background="#00ffffff"
+        android:textColor="@color/black"
+        android:paddingLeft="10dp"
+
+        android:layout_above="@+id/View04"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <View
+        android:id="@+id/View04"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#fc0808"
+        android:layout_alignTop="@+id/btn_readmore1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="- See more at"
+        android:id="@+id/btn_readmore1"
+        android:layout_alignParentBottom="true"
+        android:textAllCaps="false"
+        android:background="#00ffffff"
+        android:textColor="#000"
+        android:paddingLeft="10dp" />
+
+    <ImageButton
+        android:id="@+id/fab"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:contextClickable="false"
+        android:baselineAlignBottom="false"
+        android:background="@drawable/icon_share"
+
+        android:clickable="false"
+        android:layout_marginBottom="23dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+    <Button
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test9.modelspoint.com"
+        android:gravity="left|fill_vertical"
+        android:id="@+id/btn_readmore"
+        android:textAllCaps="false"
+        android:background="#00ffffff"
+        android:textColor="#f90505"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/postby"
+        android:layout_toRightOf="@+id/btn_readmore1"
+        android:layout_toEndOf="@+id/btn_readmore1"
+
+        />
+
+
+</RelativeLayout>

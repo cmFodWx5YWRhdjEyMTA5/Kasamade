@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_Bookmark"
+            android:icon="@drawable/bookmark_white"
+            android:title="Bookmark" />
+        <item
+            android:id="@+id/nav_trending"
+            android:icon="@drawable/trending"
+            android:title="Trending" />
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news"
+            android:title="NewsArticles" />
+        <item
+            android:id="@+id/nav_channels"
+            android:icon="@drawable/ic_channels"
+            android:title="Channels" />
+        <item
+            android:id="@+id/nav_videos"
+            android:icon="@drawable/ic_video"
+            android:title="Videos" />
+
+        <item
+            android:id="@+id/nav_producers"
+            android:icon="@drawable/ic_producer"
+            android:title="Producers" />
+        <item
+            android:id="@+id/nav_directors"
+            android:icon="@drawable/ic_director"
+            android:title="Directors" />
+        <item
+            android:id="@+id/nav_celebrities"
+            android:icon="@drawable/ic_tc"
+            android:title="Television Celebrities" />
+        <item
+            android:id="@+id/nav_authors"
+            android:icon="@drawable/ic_auth"
+            android:title="Authors" />
+
+    </group>
+
+
+</menu>

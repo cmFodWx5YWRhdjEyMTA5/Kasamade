@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/peach"
+    >
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+
+        android:gravity="center"
+        android:layout_margin="20dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Program to Wishlist"
+            android:textColor="@color/White"
+            android:textSize="18sp"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <AutoCompleteTextView
+                android:id="@+id/ed_movie_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Movie Name"
+                android:textColor="@color/White"
+                android:backgroundTint="@color/White"
+                android:paddingLeft="10dp"
+                android:inputType="text"
+                android:maxLength="100"
+                android:textSize="16sp"
+                android:paddingRight="10dp"
+                android:textColorHint="@color/White"
+                />
+
+
+
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_director_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ed_director_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Director Name"
+                android:textColor="@color/White"
+                android:backgroundTint="@color/White"
+                android:inputType="text"
+                android:textSize="16sp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/White"
+                />
+
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_release_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/ed_release_year"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Release Year"
+                android:textSize="16sp"
+                android:textColor="@color/White"
+                android:backgroundTint="@color/White"
+                android:inputType="number"
+                android:maxLength="4"
+                android:digits="0123456789"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/White"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/layout_movie_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/ed_movie_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Movies Type"
+                android:textColor="@color/White"
+                android:textSize="16sp"
+                android:backgroundTint="@color/White"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorHint="@color/White"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to wishlist"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+
+            android:background="@color/Red"
+            android:textColor="@color/White"
+            android:id="@+id/btn_add_to_wishlist"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center_horizontal" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="AllFragment.News_Article_Fragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:id="@+id/layout_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ed_search"
+        android:layout_margin="10dp"
+        android:hint="Search"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:singleLine="true"
+
+        android:background="@drawable/textview_bottom_line"
+        />
+
+        <ImageView
+            android:id="@+id/im_search"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_search_black"
+            />
+    </LinearLayout>
+    <Adapter.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+
+        >
+    </Adapter.CustomViewPager>
+    <ImageView
+        android:id="@+id/im_no_internet_connection"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/no_internet_connection"
+        android:visibility="gone"/>
+</LinearLayout>

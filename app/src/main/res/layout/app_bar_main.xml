@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinator"
+    android:fitsSystemWindows="true"
+    tools:context="MainActivity"
+    app:layout_scrollFlags="scroll|enterAlways"
+    >
+
+
+    <include layout="@layout/fragment_content_layout"
+        android:id="@+id/layout_content"
+        />
+    <!--<include layout="@layout/activity_channels"
+        android:id="@+id/layout_content_2"
+        />
+    <include layout="@layout/activity_language"
+        android:id="@+id/layout_content_3"
+        />-->
+    <!--<android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark"
+        app:layout_scrollFlags="scroll|enterAlways|snap"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:visibility="gone">
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foregroundGravity="right"
+            android:src="@android:drawable/ic_delete"
+           />
+
+
+
+    </android.support.v7.widget.Toolbar>-->
+
+
+
+
+</android.support.design.widget.CoordinatorLayout>

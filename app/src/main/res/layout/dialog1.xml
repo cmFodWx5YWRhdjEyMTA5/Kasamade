@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:id="@+id/a"
+        android:gravity="center"
+        android:background="#000"
+        android:src="@mipmap/ic_launcher1"
+
+        android:scaleType="fitCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="कसमादे न्यूज बर्ड मधून बाहेर या ?"
+        android:id="@+id/text_dialog"
+        android:layout_marginTop="20dp"
+
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:textColor="#ff000000"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/a"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/text_dialog"
+        >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="नाही"
+        android:id="@+id/btn_dialog"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:background="#000"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffffff" />
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="होय"
+            android:id="@+id/btn_dialog1"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:background="#000"
+            android:layout_centerHorizontal="true"
+            android:textColor="#ffffffff" />
+        </RelativeLayout>>
+
+</RelativeLayout>

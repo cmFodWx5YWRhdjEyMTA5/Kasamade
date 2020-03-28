@@ -1,0 +1,281 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/peach"
+    tools:context="com.kasamade.news.LoginActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linLoginLay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="15dp"
+        android:background="@color/peach"
+        android:orientation="vertical">
+
+        <!-- <TextView
+             android:id="@+id/textView5"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginBottom="20dp"
+             android:background="@color/colorPrimary"
+             android:gravity="center"
+             android:paddingBottom="10dp"
+             android:paddingTop="10dp"
+             android:singleLine="true"
+             android:text="Welcome"
+             android:textAppearance="?android:attr/textAppearanceLarge"
+             android:textColor="#ffffff"
+             android:textStyle="bold" />-->
+
+        <ImageView
+            android:id="@+id/mahindraName"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/ic_launcher" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="कसमादे न्यूज बर्ड"
+            android:textSize="30dp"
+            android:textColor="@color/White"/>
+
+
+
+        <!-- This FrameLayout insets its children based on system windows using
+             android:fitsSystemWindows. -->
+
+        <LinearLayout
+            android:id="@+id/fullscreen_content_controls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="10sp"
+            tools:ignore="UselessParent">
+
+
+            <!-- <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:gravity="center"
+                 android:paddingBottom="15dp"
+                 android:paddingRight="15dp"
+                 android:paddingTop="15dp"
+                 android:text="Mobile no."
+                 android:textAppearance="?android:attr/textAppearanceMedium"
+                 android:textStyle="bold"
+                 android:textColor="#000000" />-->
+
+
+
+                <EditText
+                    android:id="@+id/edit_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="51dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="20dp"
+                    android:ems="10"
+                    android:fontFamily="Roboto"
+                    android:hint="संपूर्ण नाव"
+                    android:textSize="14dp"
+
+                    android:minEms="0"
+                    android:minWidth="0dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/peach"
+                    android:textColorHint="@color/Gray" >
+                    <requestFocus />
+                    </EditText>
+
+
+
+
+
+            <EditText
+                android:id="@+id/edit_mobile"
+                android:layout_width="fill_parent"
+                android:layout_height="51dip"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/smartmobile"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="Roboto"
+                android:hint="मोबाइल नंबर"
+                android:inputType="number"
+                android:textSize="14dp"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textColor="@color/peach"
+                android:textColorHint="@color/Gray"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+         <!--   <AutoCompleteTextView
+                android:id="@+id/edit_taluka"
+                android:layout_width="fill_parent"
+                android:layout_height="51dip"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/taluka"
+                android:drawablePadding="20dp"
+
+                android:fontFamily="Roboto"
+                android:textSize="14dp"
+                android:hint="तालुका"
+
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textColor="@color/peach"
+                android:textColorHint="@color/Gray"
+                android:textAppearance="?android:attr/textAppearanceMedium">
+
+            </AutoCompleteTextView>-->
+
+
+
+
+            <Spinner
+                android:id="@+id/edit_taluka"
+                android:layout_width="fill_parent"
+                android:layout_height="51dip"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/taluka"
+                android:drawablePadding="20dp"
+
+                android:fontFamily="Roboto"
+                android:textSize="14dp"
+                android:visibility="gone"
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textColor="@color/peach"
+                android:textColorHint="@color/Gray"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+
+                />
+            <Spinner
+                android:id="@+id/edit_pin"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/pin"
+                android:drawablePadding="20dp"
+
+                android:fontFamily="Roboto"
+                android:textSize="14dp"
+                android:visibility="gone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textColor="@color/peach"
+                android:textColorHint="@color/Gray"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+
+            />
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="fill_parent"
+                android:layout_height="51dip"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rounded_edittext"
+                android:drawableLeft="@drawable/email"
+                android:drawablePadding="20dp"
+                android:textSize="14dp"
+
+                android:fontFamily="Roboto"
+                android:hint="ई-मेल-ऍड्रेस"
+
+
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+
+                android:textColor="@color/peach"
+                android:textColorHint="@color/Gray"
+                android:textAppearance="?android:attr/textAppearanceMedium"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:checked="false"
+                android:paddingRight="5dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="30dp"
+
+                android:textColor="@color/White"
+                android:buttonTint="@color/White"
+                android:visibility="visible" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/condition1"
+                    android:textSize="14dp"
+                    android:layout_marginTop="31dp"
+
+                    android:textColor="@color/White"
+                    android:text="नियम आणि अटी लागू"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/model_button"
+                android:text="नोंदणी करा"
+                android:textAllCaps="false"
+                android:textColor="@color/White"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_copywrite"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/company_name"
+                    android:textColor="@color/White"
+                    android:textSize="10dp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

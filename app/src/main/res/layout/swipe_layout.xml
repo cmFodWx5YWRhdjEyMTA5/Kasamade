@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/appbar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:id="@+id/imageView"
+            android:layout_gravity="top"
+            android:scaleType="fitXY"
+            android:src="@drawable/loading"
+            android:radius="5dp" />
+        <ImageView
+            android:id="@+id/outside_imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:src="@drawable/youtube_ico"
+            android:padding="80dp"
+            android:alpha=".80"
+
+            android:layout_gravity="center"
+            android:adjustViewBounds="false"
+            android:layout_alignBottom="@+id/imageView" />
+        </FrameLayout>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/posttitile"
+            android:textColor="@color/White"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:background="@color/peach"
+            android:textIsSelectable="true"
+            android:typeface="normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:layout_below="@+id/imageView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+       <!-- <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+
+            <TextView
+                android:id="@+id/desc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/peach"
+                android:linksClickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/Gray"
+                android:textSize="14dp"
+                android:typeface="monospace" />
+
+            <!-- <TextView
+                 style="@style/Base.TextAppearance.AppCompat"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:id="@+id/postby"
+                 android:background="#00ffffff"
+                 android:textColor="@color/black"
+                 android:paddingLeft="10dp"
+                 android:layout_gravity="bottom"
+                 android:layout_weight="5"
+
+                 />-->
+
+        </LinearLayout>
+
+        <!--</ScrollView>-->
+    </LinearLayout>
+
+ <!--   <View
+        android:id="@+id/View04"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#fc0808"
+        android:layout_alignTop="@+id/btn_readmore1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_weight="0.1"
+        android:background="@drawable/bottom"
+        android:gravity="center_vertical"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/bottom"
+            android:layout_weight="1">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="अधिक माहितीसाठी"
+                android:id="@+id/btn_readmore1"
+                android:textAllCaps="false"
+                android:background="@drawable/bottom"
+                android:gravity="center_vertical"
+                android:textColor="@color/White"
+                android:paddingLeft="10dp"
+
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="येथे क्लिक करा"
+                android:gravity="left|fill_vertical"
+                android:id="@+id/btn_readmore"
+                android:textAllCaps="false"
+                android:background="@drawable/bottom"
+                android:textColor="@color/White"
+                />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/bookmark"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:baselineAlignBottom="false"
+            android:background="@drawable/bookmark"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp" />
+
+        <ImageButton
+            android:id="@+id/fab"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignWithParentIfMissing="true"
+            android:contextClickable="false"
+            android:baselineAlignBottom="false"
+            android:background="@drawable/ic_share"
+            android:clickable="false"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
